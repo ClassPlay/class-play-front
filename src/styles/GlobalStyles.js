@@ -17,6 +17,9 @@ export default createGlobalStyle`
         --purple-blue: #1F1347;
         --yellow: #FFE500;
         --blue: #00A3FF;
+        --black: #0000;
+        --green-right: #0FBB00;
+        --red-wrong:  #B50000;
 
     }
 

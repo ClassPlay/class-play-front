@@ -1,5 +1,7 @@
 import { StyledAnswer } from './style';
 
-export const Answer = () => {
-  return <StyledAnswer></StyledAnswer>;
+const Answer = ({ answer }) => {
+  return <StyledAnswer>{answer}</StyledAnswer>;
 };
+
+export default Answer;

@@ -1,5 +1,13 @@
+import Answer from '../../components/Answer';
+import Header from '../../components/header/header';
+
 function Home() {
-  return <p>Home</p>;
+  return (
+    <>
+      <Header />
+      <Answer answer='teste' />
+    </>
+  );
 }
 
 export default Home;

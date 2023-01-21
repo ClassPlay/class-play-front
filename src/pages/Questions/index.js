@@ -1,5 +1,12 @@
+import Header from '../../components/header/header';
+
 function Questions() {
-  return <p>Questions</p>;
+  return (
+    <>
+      <Header />
+      <p>Questions</p>
+    </>
+  );
 }
 
 export default Questions;
