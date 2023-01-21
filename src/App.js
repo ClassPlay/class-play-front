@@ -1,10 +1,12 @@
-import logo from './logo.svg';
-import ProgressBar from './components/progressbar/progress';
-import './App.css';
+import GlobalStyles from './styles/GlobalStyles';
+import Routes from './routes';
 
 function App() {
   return (
-    <ProgressBar/>
+    <>
+      <GlobalStyles />
+      <Routes />
+    </>
   );
 }
 
