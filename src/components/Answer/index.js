@@ -1,7 +1,7 @@
 import { StyledAnswer } from './style';
 
 const Answer = ({ answer }) => {
-  return <StyledAnswer>{answer}</StyledAnswer>;
+  return <StyledAnswer status=''>{answer}</StyledAnswer>;
 };
 
 export default Answer;

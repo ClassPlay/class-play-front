@@ -12,6 +12,8 @@ export const StyledAnswer = styled.div`
 
   padding: 10px;
 
+  margin: 8px;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
