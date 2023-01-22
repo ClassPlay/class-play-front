@@ -3,6 +3,7 @@ import Home from '../pages/Home';
 import Questions from '../pages/Questions';
 import PageVideo from '../pages/Video';
 import Login from '../pages/Login';
+import Earn from '../components/earn';
 
 function Routes() {
   return (
