@@ -4,6 +4,8 @@ import QuestionHeader from '../../components/QuestionHeader';
 import Header from '../../components/header/header';
 import TrailTitle from '../../components/trailtitle/TrailTitle';
 
+import ArrowImg from '../../images/arrow.svg';
+
 import { MainContext } from '../../contexts/mainContext';
 import axios from 'axios';
 import api from '../../services/api';
@@ -44,7 +46,6 @@ function Questions() {
   }
 
   return (
-    
     <StyledQuestions>
       <Header />
       <TrailTitle trailName={trail.descricao} />
@@ -56,7 +57,10 @@ function Questions() {
       {questions[questionsCounter].respostas.map((answer) => {
         return <Answer answer={answer} />;
       })}
-      <button onClick={() => counter()}>next</button>
+      <section>
+        <ProgressBar />
+        <img onClick={() => counter()} src={ArrowImg} alt={'next'} />
+      </section>
     </StyledQuestions>
   );
 }
