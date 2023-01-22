@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import 'animate.css';
 
 export default createGlobalStyle`
       *{
@@ -57,5 +58,15 @@ export default createGlobalStyle`
         color: var(--white);
         weight: 600;
         font-size: 22px;
+    }
+
+    .animate-fade-in-down{
+        animation-duration: 3s;
+        animation-name: fadeInDown;
+    }
+
+    .animate-fade-in-left{
+        animation-duration: 2s;
+        animation-name: fadeInLeft;
     }
 `;
