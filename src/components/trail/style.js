@@ -11,6 +11,8 @@ export const StyledTrail = styled.div`
 
     img{
         width: 100%;
+        object-fit: cover;
+        height: 75%;
         border-radius: 10px 10px 0px 0px;
     }
 

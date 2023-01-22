@@ -5,7 +5,7 @@ export const StyledAnswer = styled.div`
 
   align-items: center;
 
-  height: 27px;
+  min-height: 27px;
   width: 90vw;
 
   border-radius: 14px;
