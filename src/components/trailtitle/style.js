@@ -7,6 +7,7 @@ export const StyledTrailTitle = styled.div`
     background-color: var(--yellow);
     border-radius: 0px 0px 20px 20px;
     margin-bottom: 10px;
+    max-width: 100%;
     h1{
         color: var(--purple-blue);
         font-weight: bold;

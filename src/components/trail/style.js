@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const StyledTrail = styled.div`
 
-    border-radius: 10px;
+    border-radius: 13px;
+    filter: drop-shadow(6px 4px 4px rgba(0, 0, 0, 0.25));
     background-color: var(--white);
     width: 40%;
     margin: 10px;
