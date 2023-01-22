@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { StyledAnswer } from './style';
 import { MainContext } from '../../contexts/mainContext';
 
@@ -17,6 +17,10 @@ const Answer = ({ answer }) => {
       setStatus('');
     }
   };
+
+  useEffect(() => {
+    setStatus('');
+  }, [questionsCounter]);
 
   return (
     <StyledAnswer onClick={() => ensureAnswer()} status={status}>
