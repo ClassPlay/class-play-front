@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { StyledHeader } from "./style";
 import Logo from "../../images/logo.svg";
 import Coin from "../../images/coin.svg";
+import { MainContext } from "../../contexts/mainContext";
 
 function Header () {
     
+    const {coinsState} = useContext(MainContext);
+
     return(
 
         <StyledHeader>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
-                    <span><img className="header-coin" src={Coin} alt="coins" />  00</span>
+                    <span><img className="header-coin" src={Coin} alt="coins" />  {coinsState} </span>
                     <a className="navbar-brand" href="#"><img className="header-logo" src={Logo} alt="logo"/></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
