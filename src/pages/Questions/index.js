@@ -21,10 +21,8 @@ function Questions() {
     setQuestions,
   } = useContext(MainContext);
 
-  const [perguntas, setPerguntas] = useState([]);
-
   const counter = () => {
-    if (questionsCounter + 1 <= questions.length) {
+    if (questionsCounter + 1 < questions.length) {
       setQuestionsCounter(questionsCounter + 1);
     }
   };
@@ -34,14 +32,14 @@ function Questions() {
       .get(`trilhas/${trail.id}`)
       .then((res) => {
         console.log(res.data.perguntas);
-        setPerguntas(res.data.perguntas);
+        setQuestions(res.data.perguntas);
       })
       .catch((err) => console.log(err));
   }, []);
 
-  useEffect(() => {}, [perguntas]);
+  useEffect(() => {}, [questions]);
 
-  if (!perguntas || perguntas.length === 0) {
+  if (!questions || questions.length === 0) {
     return <></>;
   }
 
@@ -50,8 +48,12 @@ function Questions() {
     <StyledQuestions>
       <Header />
       <TrailTitle trailName={trail.descricao} />
-      <QuestionHeader points={perguntas[questionsCounter].ponto} />
-      {perguntas[questionsCounter].respostas.map((answer) => {
+      <QuestionHeader
+        points={questions[questionsCounter].ponto}
+        questionNumber={`0${questionsCounter + 1}`}
+        questionDescription={questions[questionsCounter].tituloPergunta}
+      />
+      {questions[questionsCounter].respostas.map((answer) => {
         return <Answer answer={answer} />;
       })}
       <button onClick={() => counter()}>next</button>
