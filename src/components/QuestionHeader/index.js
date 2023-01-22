@@ -8,7 +8,7 @@ const QuestionHeader = ({ questionNumber, questionDescription, points }) => {
         <h1>Questão {questionNumber}</h1>
         <QuestionCoins points={points} />
       </div>
-      <p>testando ahsauihdhudh basuduabu bu duddaudiu{questionDescription}</p>
+      <p>{questionDescription}</p>
     </StyledQuestionHeader>
   );
 };
