@@ -17,6 +17,8 @@ export const StyledAnswer = styled.div`
   font-size: 18px;
   line-height: 21px;
 
+  cursor: pointer;
+
   &:hover {
     transition: 0.5s;
     color: var(--white);
