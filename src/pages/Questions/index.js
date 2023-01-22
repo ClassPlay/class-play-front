@@ -11,7 +11,6 @@ import axios from 'axios';
 import api from '../../services/api';
 
 import NextArrow from '../../components/nextarrow/nextarrow';
-import ProgressBar from '../../components/progressbar/progress';
 import { StyledQuestions } from './style';
 
 function Questions() {
@@ -58,7 +57,6 @@ function Questions() {
         return <Answer answer={answer} />;
       })}
       <section>
-        <ProgressBar />
         <img onClick={() => counter()} src={ArrowImg} alt={'next'} />
       </section>
     </StyledQuestions>

@@ -12,6 +12,7 @@ export const StyledBar = styled.div`
         height: 100%;
         background-color: var(--purple-blue);
         border-radius: 10px;
+        width: 0%;
     }
     
 `
