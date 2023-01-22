@@ -34,11 +34,21 @@ export const StyledAnswer = styled.div`
         return css`
           color: var(--white);
           background-color: var(--green-right);
+
+          &:hover {
+            color: var(--white);
+            background-color: var(--green-right);
+          }
         `;
       case 'wrong':
         return css`
           color: var(--white);
           background-color: var(--red-wrong);
+
+          &:hover {
+            color: var(--white);
+            background-color: var(--red-wrong);
+          }
         `;
     }
   }}
