@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const StyledTrail = styled.div`
 
-    border-radius: 10px;
+    border-radius: 13px;
+    filter: drop-shadow(6px 4px 4px rgba(0, 0, 0, 0.25));
     background-color: var(--white);
-    width: 40%;
+    width: 40vw;
+    height: 40vw;
     margin: 10px;
 
     img{
@@ -14,7 +16,7 @@ export const StyledTrail = styled.div`
 
     h3{
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 6vw;
         margin-top: 5px;
     }
 

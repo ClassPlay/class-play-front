@@ -3,9 +3,14 @@ import Answer from '../../components/Answer';
 import QuestionHeader from '../../components/QuestionHeader';
 import Header from '../../components/header/header';
 import TrailTitle from '../../components/trailtitle/TrailTitle';
+
 import { MainContext } from '../../contexts/mainContext';
 import axios from 'axios';
 import api from '../../services/api';
+
+import NextArrow from '../../components/nextarrow/nextarrow';
+import ProgressBar from '../../components/progressbar/progress';
+import { StyledQuestions } from './style';
 
 function Questions() {
   const {
@@ -41,7 +46,8 @@ function Questions() {
   }
 
   return (
-    <>
+    
+    <StyledQuestions>
       <Header />
       <TrailTitle trailName={trail.descricao} />
       <QuestionHeader points={perguntas[questionsCounter].ponto} />
@@ -49,7 +55,7 @@ function Questions() {
         return <Answer answer={answer} />;
       })}
       <button onClick={() => counter()}>next</button>
-    </>
+    </StyledQuestions>
   );
 }
 
