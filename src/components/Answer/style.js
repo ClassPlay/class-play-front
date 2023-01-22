@@ -18,6 +18,12 @@ export const StyledAnswer = styled.div`
   font-size: 18px;
   line-height: 21px;
 
+  &:hover {
+    transition: 0.5s;
+    color: var(--white);
+    background-color: var(--purple-blue);
+  }
+
   ${(props) => {
     switch (props.status) {
       default:

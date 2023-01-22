@@ -20,6 +20,7 @@ export default createGlobalStyle`
         --black: #0000;
         --green-right: #0FBB00;
         --red-wrong:  #B50000;
+        --light-grey: #f5f5f5;
 
     }
 
