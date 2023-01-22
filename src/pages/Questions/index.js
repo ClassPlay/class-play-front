@@ -9,7 +9,7 @@ function Questions() {
       <Header />
       <TrailTitle />
       <QuestionHeader points={10} />
- 
+
       <Answer answer='teste' />
       <Answer answer='teste' />
     </>
