@@ -1,16 +1,23 @@
-import React from "react";
-import { StyledTrail } from "./style";
+import React, { useContext, useEffect } from 'react';
+import { StyledTrail } from './style';
+import { MainContext } from '../../contexts/mainContext';
+import api from '../../services/api';
 
-function Trail () {
+function Trail({ trail, trailName, trailImg }) {
+  const { handleNavigation, setTrail, questions, setQuestions } =
+    useContext(MainContext);
 
-    return(
+  const goToQuiz = () => {
+    setTrail(trail);
+    handleNavigation(`/questions`);
+  };
 
-        <StyledTrail>
-            <img src="https://v5j9q4b5.rocketcdn.me/wp-content/uploads/2022/06/20-fatos-legais-e-divertidos-sobre-matematica-e1654302576479-960x600.jpg" alt="trilha"/>
-            <h3>Matemática</h3>
-        </StyledTrail>
-
-    )
+  return (
+    <StyledTrail onClick={() => goToQuiz()}>
+      <img src={trailImg} alt='trilha' />
+      <h3>{trailName}</h3>
+    </StyledTrail>
+  );
 }
 
 export default Trail;
