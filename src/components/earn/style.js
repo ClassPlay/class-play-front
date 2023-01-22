@@ -1,24 +1,21 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const StyledEarn = styled.div`
+export const StyledEarn = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 10px;
+  height: 4rem;
+  width: 12rem;
+  margin-top: 10px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--white);
-    border-radius: 10px;
-    height: 4rem;
-    width: 12rem;
-    margin-top: 10px;
+  .coin-img {
+    height: 3rem;
+    margin-right: 10px;
+  }
 
-    .coin-img{
-        height: 3rem;
-        margin-right: 10px;
-    }
-
-    span{
-        font-size: 2rem;
-    }
-
-
-`
+  span {
+    font-size: 2rem;
+  }
+`;

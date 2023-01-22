@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const StyledFinal = styled.div`
   display: flex;
+  align-items: center;
+
   flex-direction: column;
 
   background-color: var(--yellow);
@@ -11,6 +13,10 @@ export const StyledFinal = styled.div`
   div {
     margin-top: 10px;
     justify-content: center;
+  }
+
+  section {
+    margin-top: 50px;
   }
 
   p {
@@ -34,7 +40,7 @@ export const StyledFinal = styled.div`
     line-height: 28px;
     color: var(--purple-blue);
 
-    margin: 20px 30px 0px 30px;
+    margin: 50px 30px 0px 30px;
 
     &:hover {
       transition: 0.5s;

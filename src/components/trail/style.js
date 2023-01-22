@@ -8,22 +8,23 @@ export const StyledTrail = styled.div`
   height: 40vw;
   margin: 10px;
 
+  cursor: pointer;
+
   img {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
   }
 
-    img{
-        width: 100%;
-        object-fit: cover;
-        height: 75%;
-        border-radius: 10px 10px 0px 0px;
-    }
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 75%;
+    border-radius: 10px 10px 0px 0px;
+  }
 
-    h3{
-        text-align: center;
-        font-size: 6vw;
-        margin-top: 5px;
-    }
-
-`
+  h3 {
+    text-align: center;
+    font-size: 6vw;
+    margin-top: 5px;
+  }
+`;
