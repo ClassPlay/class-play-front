@@ -3,7 +3,8 @@ import Home from '../pages/Home';
 import Questions from '../pages/Questions';
 import PageVideo from '../pages/Video';
 import Login from '../pages/Login';
-import Earn from '../components/earn';
+import Final from '../pages/Final';
+
 
 function Routes() {
   return (
@@ -19,6 +20,9 @@ function Routes() {
       </Route>
       <Route exact path='/questions'>
         <Questions />
+      </Route>
+      <Route exact path='/final'>
+        <Final />
       </Route>
     </Switch>
   );
