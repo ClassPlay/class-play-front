@@ -20,11 +20,14 @@ function Questions() {
     questionsCounter,
     setQuestionsCounter,
     setQuestions,
+    handleNavigation,
   } = useContext(MainContext);
 
   const counter = () => {
     if (questionsCounter + 1 < questions.length) {
       setQuestionsCounter(questionsCounter + 1);
+    } else {
+      handleNavigation('/final');
     }
   };
 
@@ -56,7 +59,7 @@ function Questions() {
       {questions[questionsCounter].respostas.map((answer) => {
         return <Answer answer={answer} />;
       })}
-      <section>
+      <section className='flex-end'>
         <img onClick={() => counter()} src={ArrowImg} alt={'next'} />
       </section>
     </StyledQuestions>
