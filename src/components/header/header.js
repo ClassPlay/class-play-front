@@ -3,6 +3,7 @@ import { StyledHeader } from './style';
 import Logo from '../../images/logo.svg';
 import Coin from '../../images/coin.svg';
 import { MainContext } from '../../contexts/mainContext';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const { coinsState } = useContext(MainContext);
@@ -15,9 +16,9 @@ function Header() {
           <span>
             <img className='header-coin' src={Coin} alt='coins' /> {coinsState}{' '}
           </span>
-          <a className='navbar-brand' href='#'>
-            <img className='header-logo' src={Logo} alt='logo' />
-          </a>
+          <Link to={'/home'} className='navbar-brand'> 
+            <img className='header-logo' src={Logo} alt='logo' /> 
+          </Link>
           <button
             className='navbar-toggler'
             type='button'
@@ -32,9 +33,7 @@ function Header() {
           <div className='collapse navbar-collapse' id='navbarNav'>
             <ul className='navbar-nav'>
               <li className='nav-item'>
-                <a className='nav-link' href='#'>
-                  Home
-                </a>
+                <Link to={'/home'} className='nav-link'> Home </Link>
               </li>
               <li className='nav-item'>
                 <a className='nav-link' href='#'>
@@ -45,6 +44,9 @@ function Header() {
                 <a className='nav-link' href='#'>
                   Recompensas
                 </a>
+              </li>
+              <li className='nav-item'>
+                <Link to={'/'} className='nav-link'> Logout </Link>
               </li>
             </ul>
           </div>
