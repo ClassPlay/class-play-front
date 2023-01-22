@@ -20,4 +20,10 @@ export const StyledQuestions = styled.div`
     align-items: center;
     justify-content: center;
   }
+
+  section {
+    img {
+      cursor: pointer;
+    }
+  }
 `;
