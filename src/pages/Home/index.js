@@ -4,12 +4,12 @@ import Header from '../../components/header/header';
 import Trail from '../../components/trail/trail';
 
 import { MainContext } from '../../contexts/mainContext';
-import { StyledTrailsSection } from "./trails";
+import { StyledTrailsSection } from './trails';
 import SideQuest from '../../components/SideQuest/sidequest';
 
 function Home() {
-  const { user, userTrails } = useContext(MainContext);
-
+  const { user, userTrails, setQuestionsCounter } = useContext(MainContext);
+  setQuestionsCounter(0);
   return (
     <>
       <Header />
